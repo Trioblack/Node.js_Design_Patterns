@@ -13,5 +13,6 @@ function iterateSeries(collection, iteratorCallback, finalCallback) {
         
         iterate(index + 1);
     }
+    iterate(0);
 
 }
