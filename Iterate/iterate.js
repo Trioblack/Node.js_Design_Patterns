@@ -1,19 +1,17 @@
 ﻿/**
  * Function that iterates on async tasks
- * Should be inside the "tasks" function
  */
-function iterate(index) {
-    if (index === tasks.length) {
-        return finish();
-    }
-    var task = tasks[index];
-    task(function () {
+function iterateSeries(collection, iteratorCallback, finalCallback) {
+
+    function iterate(index) {
+        if (index === collection.length) {
+            return finalCallback();
+        }
+        var item = collection[index];
+        
+        iteratorCallback(item);
+        
         iterate(index + 1);
-    });
-}
+    }
 
-function finish() {
-    // iteration completed...
 }
-
-iterate(0);
