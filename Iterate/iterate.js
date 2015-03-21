@@ -1,5 +1,6 @@
 ﻿/**
- * Function that iterates on async tasks 
+ * Function that iterates on async tasks
+ * Should be inside the "tasks" function
  */
 function iterate(index) {
     if (index === tasks.length) {
