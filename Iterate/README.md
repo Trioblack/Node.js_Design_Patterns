@@ -1,4 +1,8 @@
-﻿How it works
+﻿Iterator pattern
+================
+
+
+How it works
 ============
 
 ```

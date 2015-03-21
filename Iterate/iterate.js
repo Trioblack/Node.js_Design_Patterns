@@ -1,5 +1,6 @@
 ﻿/**
- * Function that iterates on async tasks
+ * Function that executes function asynchronously on a
+ * given collection
  */
 function iterateSeries(collection, iteratorCallback, finalCallback) {
 
